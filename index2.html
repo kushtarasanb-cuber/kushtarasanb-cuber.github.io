@@ -3,35 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kushtarbek Сайты</title>
+<title>Kushtarbek Premium Сайты</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <style>
 * {margin:0; padding:0; box-sizing:border-box;}
-body {font-family: Arial, sans-serif; line-height:1.6; background:#f0f4f8; color:#333;}
-header {background:#1e3c72; color:white; padding:20px 0; text-align:center; font-size:28px; font-weight:bold;}
-nav {background:#2a5298; display:flex; justify-content:center; padding:10px;}
+body {font-family: 'Roboto', sans-serif; line-height:1.6; background:#f0f4f8; color:#333;}
+header {background:#1e3c72; color:white; padding:20px 0; text-align:center; font-size:28px; font-weight:bold; box-shadow: 0 2px 8px rgba(0,0,0,0.2);}
+nav {background:#2a5298; display:flex; justify-content:center; padding:10px; flex-wrap:wrap;}
 nav a {color:white; text-decoration:none; margin:0 15px; font-size:18px; transition:0.3s;}
 nav a:hover {color:#ffcc00;}
-.hero {text-align:center; padding:60px 20px; background: linear-gradient(to right, #1e3c72, #2a5298); color:white;}
-.hero h1 {font-size:40px; margin-bottom:10px;}
-.hero p {font-size:20px; margin-bottom:20px; opacity:0.9;}
-.hero .btn {padding:12px 30px; font-size:18px; background:#ffcc00; color:#1e3c72; border:none; border-radius:8px; text-decoration:none; font-weight:bold; transition:0.3s;}
-.hero .btn:hover {background:#e6b800;}
-section {padding:60px 20px; max-width:1000px; margin:0 auto;}
-section h2 {font-size:32px; margin-bottom:20px; text-align:center; color:#1e3c72;}
+.hero {text-align:center; padding:100px 20px; background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover; color:white; position:relative; overflow:hidden;}
+.hero::after {content:""; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5);}
+.hero h1, .hero p, .hero .btn {position:relative; z-index:1; animation: fadeIn 2s ease;}
+.hero h1 {font-size:50px; margin-bottom:20px;}
+.hero p {font-size:22px; margin-bottom:30px; opacity:0.9;}
+.hero .btn {padding:15px 40px; font-size:18px; background:#ffcc00; color:#1e3c72; border:none; border-radius:12px; text-decoration:none; font-weight:bold; transition:0.3s;}
+.hero .btn:hover {background:#e6b800; transform:scale(1.05);}
+section {padding:80px 20px; max-width:1000px; margin:0 auto;}
+section h2 {font-size:36px; margin-bottom:25px; text-align:center; color:#1e3c72;}
 section p {font-size:18px; margin-bottom:15px; text-align:center;}
-footer {background:#1e3c72; color:white; text-align:center; padding:15px; margin-top:40px;}
+footer {background:#1e3c72; color:white; text-align:center; padding:20px; margin-top:40px;}
+@keyframes fadeIn {from{opacity:0; transform:translateY(20px);} to{opacity:1; transform:translateY(0);}}
 @media(max-width:768px){
 nav {flex-direction:column;}
 nav a {margin:10px 0;}
-.hero h1 {font-size:32px;}
-.hero p {font-size:16px;}
+.hero h1 {font-size:36px;}
+.hero p {font-size:18px;}
 .hero .btn {font-size:16px;}
 }
 </style>
 </head>
 <body>
 
-<header>Kushtarbek Расмий Сайты</header>
+<header>Kushtarbek Premium Сайты</header>
 
 <nav>
 <a href="#home">Башкы</a>
@@ -40,22 +44,22 @@ nav a {margin:10px 0;}
 </nav>
 
 <div class="hero" id="home">
-<h1>Кош Келдиниз!</h1>
-<p>Бул — Куштарбектин жеке сайты. Жаңылыктар, байланыш жана маалыматтар ушул жакта.</p>
+<h1>Кош Келдиңиз!</h1>
+<p>Бул — Куштарбектин жеке премиум сайты. Бардык жаңылыктар жана маалыматтар ушул жерде.</p>
 <a href="#about" class="btn">Толугу менен көрүү</a>
 </div>
 
 <section id="about">
 <h2>Жөнүндө</h2>
 <p>Мен Куштарбек, сайтты GitHub Pages аркылуу түздүм. Бул жерде менин долбоорлорум, жаңылыктарым жана маалыматтар жайгашкан.</p>
-<p>Сайт мобилдик жана ПКда жакшы көрүнөт, дизайн заманбап жана интерактивдүү.</p>
+<p>Сайт мобилдик жана ПКда мыкты көрүнөт, дизайн заманбап жана интерактивдүү.</p>
 </section>
 
 <section id="contact">
 <h2>Байланыш</h2>
-<p>Email: kushtarbek@example.com</p>
-<p>Телефон: +996 555 123 456</p>
-<p>Сиз мага социалдык тармак аркылуу да байланышсаңыз болот.</p>
+<p>Email: kushtarasanb@gmail.com</p>
+<p>Телефон: +996 700 33 80 95</p>
+<p>Социалдык тармактар: <a href="#" target="_blank">Facebook</a> | <a href="#" target="_blank">Instagram</a> | <a href="#" target="_blank">Telegram</a></p>
 </section>
 
 <footer>© 2025 Kushtarbek - Бардык укуктар корголгон</footer>
