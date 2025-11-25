@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kushtarbek Premium Сайты</title>
+<title>Kushtarbek Сайты</title>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <style>
 * {margin:0; padding:0; box-sizing:border-box;}
-body {font-family: 'Roboto', sans-serif; line-height:1.6; {background:#1e1e1e; color:white;}
-header {background:#1e3c72; color:white; padding:20px 0; text-align:center; font-size:28px; font-weight:bold; box-shadow: 0 2px 8px rgba(0,0,0,0.2);}
+body {font-family: 'Roboto', sans-serif; background:#f0f4f8; color:#333;}
+header {background:#1e3c72; color:white; padding:20px 0; text-align:center; font-size:28px; font-weight:bold;}
 nav {background:#2a5298; display:flex; justify-content:center; padding:10px; flex-wrap:wrap;}
 nav a {color:white; text-decoration:none; margin:0 15px; font-size:18px; transition:0.3s;}
 nav a:hover {color:#ffcc00;}
@@ -22,6 +22,10 @@ nav a:hover {color:#ffcc00;}
 section {padding:80px 20px; max-width:1000px; margin:0 auto;}
 section h2 {font-size:36px; margin-bottom:25px; text-align:center; color:#1e3c72;}
 section p {font-size:18px; margin-bottom:15px; text-align:center;}
+.news-item {margin-bottom:40px;}
+.news-item img {width:100%; max-width:600px; display:block; margin:0 auto; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2); transition: transform 0.3s;}
+.news-item img:hover {transform: scale(1.05);}
+.news-item p {margin-top:10px; font-size:18px;}
 footer {background:#1e3c72; color:white; text-align:center; padding:20px; margin-top:40px;}
 @keyframes fadeIn {from{opacity:0; transform:translateY(20px);} to{opacity:1; transform:translateY(0);}}
 @media(max-width:768px){
@@ -31,10 +35,7 @@ nav a {margin:10px 0;}
 .hero p {font-size:18px;}
 .hero .btn {font-size:16px;}
 }
-</style.news-item {margin-bottom:40px;}
-.news-item img {width:100%; max-width:600px; display:block; margin:0 auto; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2); transition: transform 0.3s;}
-.news-item img:hover {transform: scale(1.05);}
-.news-item p {margin-top:10px; font-size:18px;}
+</style>
 </head>
 <body>
 
@@ -43,9 +44,10 @@ nav a {margin:10px 0;}
 <nav>
 <a href="#home">Башкы</a>
 <a href="#about">Жөнүндө</a>
-<a href="#contact">Байланыш</a>
 <a href="#news">Жаңылыктар</a>
+<a href="#contact">Байланыш</a>
 </nav>
+
 <div class="hero" id="home">
 <h1>Кош Келдиңиз!</h1>
 <p>Бул — Куштарбектин жеке премиум сайты. Бардык жаңылыктар жана маалыматтар ушул жерде.</p>
@@ -57,6 +59,7 @@ nav a {margin:10px 0;}
 <p>Мен Куштарбек, сайтты GitHub Pages аркылуу түздүм. Бул жерде менин долбоорлорум, жаңылыктарым жана маалыматтар жайгашкан.</p>
 <p>Сайт мобилдик жана ПКда мыкты көрүнөт, дизайн заманбап жана интерактивдүү.</p>
 </section>
+
 <section id="news">
 <h2>Жаңылыктар</h2>
 <div class="news-item">
@@ -68,10 +71,11 @@ nav a {margin:10px 0;}
   <p>Бул — экинчи жаңылык жөнүндө текст.</p>
 </div>
 </section>
+
 <section id="contact">
 <h2>Байланыш</h2>
 <p>Email: kushtarasanb@gmail.com</p>
-<p>Телефон: +996 700 33 80 95</p>
+<p>Телефон: +996 700 33 80 95 </p>
 <p>Социалдык тармактар: <a href="#" target="_blank">Facebook</a> | <a href="#" target="_blank">Instagram</a> | <a href="#" target="_blank">Telegram</a></p>
 </section>
 
