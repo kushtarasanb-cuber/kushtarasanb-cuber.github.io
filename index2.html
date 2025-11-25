@@ -5,26 +5,60 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kushtarbek Сайты</title>
 <style>
-body {margin:0;font-family:Arial;background:#1e3c72;color:white;text-align:center;}
-header {padding:20px;background:rgba(0,0,0,0.2);font-size:26px;font-weight:bold;}
-.hero {margin-top:40px;padding:20px;}
-.hero h1 {font-size:38px;margin-bottom:10px;}
-.hero p {font-size:20px;opacity:0.9;}
-.btn {display:inline-block;margin-top:20px;padding:10px 25px;font-size:18px;background:white;color:#1e3c72;border-radius:8px;text-decoration:none;font-weight:bold;}
-footer {margin-top:60px;padding:15px;opacity:0.8;font-size:14px;}
+* {margin:0; padding:0; box-sizing:border-box;}
+body {font-family: Arial, sans-serif; line-height:1.6; background:#f0f4f8; color:#333;}
+header {background:#1e3c72; color:white; padding:20px 0; text-align:center; font-size:28px; font-weight:bold;}
+nav {background:#2a5298; display:flex; justify-content:center; padding:10px;}
+nav a {color:white; text-decoration:none; margin:0 15px; font-size:18px; transition:0.3s;}
+nav a:hover {color:#ffcc00;}
+.hero {text-align:center; padding:60px 20px; background: linear-gradient(to right, #1e3c72, #2a5298); color:white;}
+.hero h1 {font-size:40px; margin-bottom:10px;}
+.hero p {font-size:20px; margin-bottom:20px; opacity:0.9;}
+.hero .btn {padding:12px 30px; font-size:18px; background:#ffcc00; color:#1e3c72; border:none; border-radius:8px; text-decoration:none; font-weight:bold; transition:0.3s;}
+.hero .btn:hover {background:#e6b800;}
+section {padding:60px 20px; max-width:1000px; margin:0 auto;}
+section h2 {font-size:32px; margin-bottom:20px; text-align:center; color:#1e3c72;}
+section p {font-size:18px; margin-bottom:15px; text-align:center;}
+footer {background:#1e3c72; color:white; text-align:center; padding:15px; margin-top:40px;}
+@media(max-width:768px){
+nav {flex-direction:column;}
+nav a {margin:10px 0;}
+.hero h1 {font-size:32px;}
+.hero p {font-size:16px;}
+.hero .btn {font-size:16px;}
+}
 </style>
 </head>
 <body>
+
 <header>Kushtarbek Расмий Сайты</header>
-<div class="hero">
-<h1>Кош Келдиңиз!</h1>
+
+<nav>
+<a href="#home">Башкы</a>
+<a href="#about">Жөнүндө</a>
+<a href="#contact">Байланыш</a>
+</nav>
+
+<div class="hero" id="home">
+<h1>Кош Келдиниз!</h1>
 <p>Бул — Куштарбектин жеке сайты. Жаңылыктар, байланыш жана маалыматтар ушул жакта.</p>
-<a class="btn" href="#info">Толугу менен көрүү</a>
+<a href="#about" class="btn">Толугу менен көрүү</a>
 </div>
-<div id="info" style="margin-top:50px;padding:20px;">
-<h2>Сайт жөнүндө</h2>
-<p>Бул сайт GitHub Pages аркылуу дүйнөгө ачык. Бул жакка каалагандай текст, сүрөт, видео кошсо болот.</p>
-</div>
+
+<section id="about">
+<h2>Жөнүндө</h2>
+<p>Мен Куштарбек, сайтты GitHub Pages аркылуу түздүм. Бул жерде менин долбоорлорум, жаңылыктарым жана маалыматтар жайгашкан.</p>
+<p>Сайт мобилдик жана ПКда жакшы көрүнөт, дизайн заманбап жана интерактивдүү.</p>
+</section>
+
+<section id="contact">
+<h2>Байланыш</h2>
+<p>Email: kushtarbek@example.com</p>
+<p>Телефон: +996 555 123 456</p>
+<p>Сиз мага социалдык тармак аркылуу да байланышсаңыз болот.</p>
+</section>
+
 <footer>© 2025 Kushtarbek - Бардык укуктар корголгон</footer>
+
 </body>
 </html>
